@@ -1,0 +1,70 @@
+{
+  "node": {
+    "0939d638fd157d43468aa227ef0cb696d40117cb": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "54d72d7b417fe3b978ed4b8a4b32a7c52aa2a825": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "9999f85436788ca022b18ec828c191606486d1b4": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "be5e3fa26abc920d3208f4e094cb395872f80cad": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "db90f698bdff4da098977302c0e270dd0026e72a": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "e6770df1232fbfe3850f7a58a486e0bf8a25fe0a": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "73bd78f17ce683fcda1125892408c7940b4e7315": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    },
+    "828d071c9b4ae0e71a2af21d2cdf31d61138e730": {
+      "workers": {
+        "app/(auth)/login/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CAlaaFARDOUS%5C%5COneDrive%20-%20ONE%20TEAM%5C%5CBureau%5C%5CNextJs_projects%5C%5Cnext14-starter%5C%5Csrc%5C%5Clib%5C%5Caction.js%22%2C%5B%22handleGithubLogin%22%2C%22addPost%22%2C%22handleLogout%22%2C%22%24%24ACTION_3%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22deletePost%22%2C%22%24%24ACTION_2%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(auth)/login/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "dNS2NB+CM9RyvvpnIkglvtZ53mU4Sn+bzuVXvkOvm0E="
+}

@@ -3,6 +3,8 @@ import { revalidatePath } from "next/cache"
 import { Post, User } from "./models"
 import { connectToDb } from "./utils"
 import { signIn, signOut } from "./auth"
+import bcrypt from "bcryptjs"
+import { sign } from "crypto"
 
 //Add post
 export const addPost = async (formData) => {
@@ -33,7 +35,7 @@ export const addPost = async (formData) => {
     
 }
 
-//Add post
+//DELETE post
 export const deletePost = async (formData) => {
 
     const { id } = Object.fromEntries(formData)
@@ -52,14 +54,14 @@ export const deletePost = async (formData) => {
     
 }
 
-//SIGNIN METHOD
+//SIGNIN WITH GITHUB METHOD
 export const handleGithubLogin = async () => {
     "use server";
     await signIn("github");
 }
 
 
-//LOGOUT METHOD
+//REGISTER METHOD
 export const register = async (formData) => {
     const { username, email, password, img, passwordRepeat } = Object.fromEntries(formData)
 
@@ -76,15 +78,34 @@ export const register = async (formData) => {
             return "Username already exists"
         }
 
+        const salt = await bcrypt.genSalt(10)
+        const hashedPassword = await bcrypt.hash(password, salt)
+
         const newUser = new User({
             username,
             email,
-            password,
+            password: hashedPassword,
             img
         })
         await newUser.save()
         console.log("saved to db");        
     
+    }
+    catch(err){
+        console.log(err)
+        return { error: "Something went wrong!"}
+    }
+
+}
+
+
+//LOGIN WITH CREDENTIALS METHOD
+export const login = async (formData) => {
+    const { username, password } = Object.fromEntries(formData)
+
+    try{
+
+        await signIn("credentials", {username, password})
     }
     catch(err){
         console.log(err)

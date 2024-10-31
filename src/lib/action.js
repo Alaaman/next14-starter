@@ -7,7 +7,7 @@ import bcrypt from "bcryptjs"
 import { sign } from "crypto"
 
 //Add post
-export const addPost = async (formData) => {
+export const addPost = async (prevState, formData) => {
 
    /*  const title = formData.get("title")
     const desc = formData.get("desc")
@@ -27,6 +27,7 @@ export const addPost = async (formData) => {
         await newPost.save()
         console.log("Saved to db")
         revalidatePath("/blog")
+        revalidatePath("/admin")
     }
     catch(err){
         console.log(err)
@@ -35,9 +36,37 @@ export const addPost = async (formData) => {
     
 }
 
+//Add user
+export const addUser = async (prevState, formData) => {
+ 
+     const { username, email, isAdmin, password, img } = Object.fromEntries(formData)
+ 
+     try{
+         connectToDb()
+         const newUser = new User({
+            username,
+            email,
+            isAdmin,
+            password,
+            img
+         })
+         await newUser.save()
+         console.log("Saved to db")
+         revalidatePath("/blog")
+         revalidatePath("/admin")
+     }
+     catch(err){
+         console.log(err)
+         return { error: "Something went wrong!" }
+     }
+     
+ }
+
 //DELETE post
 export const deletePost = async (formData) => {
 
+    console.log(formData);
+    
     const { id } = Object.fromEntries(formData)
 
     try{
@@ -45,7 +74,28 @@ export const deletePost = async (formData) => {
         
         await Post.findByIdAndDelete(id)
         console.log("Deleted from db")
-        revalidatePath("/blog")
+        revalidatePath("/blog")        
+        revalidatePath("/admin")
+    }
+    catch(err){
+        console.log(err)
+        return { error: "Something went wrong!" }
+    }
+    
+}
+
+//DELETE user
+export const deleteUser = async (formData) => {
+
+    const { id } = Object.fromEntries(formData)
+
+    try{
+        connectToDb()
+        
+        await User.findByIdAndDelete(id)
+        console.log("Deleted from db")
+        revalidatePath("/")
+        revalidatePath("/admin")
     }
     catch(err){
         console.log(err)
@@ -60,7 +110,7 @@ export const handleGithubLogin = async () => {
     await signIn("github");
 }
 
-//SLogout METHOD
+//Logout METHOD
 export const handleLogout = async () => {
     "use server";
     await signOut();
@@ -69,7 +119,7 @@ export const handleLogout = async () => {
 
 
 //REGISTER METHOD
-export const register = async (prviousState, formData) => {
+export const register = async (prevState, formData) => {
     const { username, email, password, img, passwordRepeat } = Object.fromEntries(formData)
 
     if(password !== passwordRepeat){
@@ -108,7 +158,7 @@ export const register = async (prviousState, formData) => {
 
 
 //LOGIN WITH CREDENTIALS METHOD
-export const login = async (formData) => {
+export const login = async (prevState, formData) => {
     const { username, password } = Object.fromEntries(formData)
 
     try{
@@ -117,7 +167,11 @@ export const login = async (formData) => {
     }
     catch(err){
         console.log(err)
-        return { error: "Something went wrong!"}
+                
+        if(err.message.includes("credentialssignin")){
+            return { error: "Invalid username or password" }
+        }
+        throw err
     }
 
 }

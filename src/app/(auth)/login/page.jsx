@@ -4,7 +4,7 @@ import { signIn, auth } from "@/lib/auth";
 import styles from "./login.module.css"
 
 
-const LoginPage = async () => {
+const LoginPage = () => {
 
     return (
         <div className={styles.container}>

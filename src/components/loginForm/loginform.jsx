@@ -9,7 +9,7 @@ import Link from "next/link"
 
 const LoginForm = () => {
 
-    const [state, formAction] = useFormState(register, undefined)
+    const [state, formAction] = useFormState(login, undefined)
 
     const router = useRouter()
 

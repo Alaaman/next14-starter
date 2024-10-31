@@ -1,4 +1,4 @@
-import { addPost, deletePost, sayHello } from "@/lib/action"
+import { addPost, deletePost, deleteUser, sayHello } from "@/lib/action"
 
 const ServerActionTestPage = () => {
     return (
@@ -14,6 +14,12 @@ const ServerActionTestPage = () => {
             <form action={deletePost}>
                 <input type="text" placeholder="Post Id" name="id"/>
                 <button>Delete Post</button>
+            </form>
+
+
+            <form action={deleteUser}>
+                <input type="text" placeholder="User Id" name="id"/>
+                <button>Delete User</button>
             </form>
 
         </div>
